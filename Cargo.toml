@@ -1,0 +1,19 @@
+[package]
+name = "audyo"
+version = "0.1.0"
+edition = "2021"
+authors = ["Chrontax"]
+description = "Simple audio decode/encode library"
+homepage = "https://github.com/chrontax/audyo"
+repository = "https://github.com/chrontax/audyo"
+license = "MIT OR Apache-2.0"
+keywords = ["audio", "encode", "decode"]
+categories = ["Encoding"]
+
+[dependencies]
+byteorder = "1.5.0"
+ogg = "0.9.1"
+rand = "0.8.5"
+symphonia = { version = "0.5.4", features = ["all", "opt-simd"] }
+thiserror = "1.0.64"
+vorbis_rs = "0.5.4"
